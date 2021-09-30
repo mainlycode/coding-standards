@@ -2,7 +2,7 @@
   "name": "simgroep/coding-standards",
   "description": "Coding standard configuration for SIMGroep PHP projects using fabpot/php-cs-fixer",
   "require": {
-    "php": "^7.0",
+    "php": "^7.0|^8.0",
     "friendsofphp/php-cs-fixer": "^2.1|^3.0"
   },
   "license": "MIT",
