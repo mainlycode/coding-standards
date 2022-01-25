@@ -11,13 +11,14 @@ $ composer require simgroep/coding-standards
 
 ## Configuration
 
-To customize the default configuration in your project you can add a `.php_cs` to your
+To customize the default configuration in your project you can add a `.php-cs-fixer.php` to your
 project and include the default configuration like this:
 
 ```php
 <?php
 
-$config = require 'vendor/simgroep/coding-standards/.php_cs.dist';
+
+$config = require 'vendor/simgroep/coding-standards/php-cs-fixer.dist.php';
 
 $config->setFinder(
     \PhpCsFixer\Finder::create()
@@ -30,6 +31,10 @@ $config->setFinder(
 
 return $config;
 ```
+
+> **LEGACY NOTE** 
+> the deprecated name for the configuration file was .php_cs, 
+> and for a legacy use may still require the vendor/simgroep/coding-standards/.php_cs.dist instead
 
 ### Symfony example
 
